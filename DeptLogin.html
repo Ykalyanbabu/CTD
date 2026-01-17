@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Department Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/newlogin.css" rel="stylesheet" />
+     <link rel="shortcut icon" href="assets/images/Tlogo.png">
+    <style>
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+    
+    :root { 
+    --primary: #0d6efd;
+    --left-bg-start: #1f5f8b;
+    --left-bg-end: #00bcd4;
+    --text-dark: #1f2937;
+    --text-light: #ffffff;
+    --border: #d1d5db;
+    --bg-white: #ffffff;
+    --muted: #6b7280;
+    --radius: 6px;
+    --font: "Segoe UI", Arial, sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    background-size: cover !important;
+    background-position: top !important;
+    background: linear-gradient(rgb(19 67 102), rgb(231 245 255 / 23%)), url(../../img/loginbg5.png) no-repeat;
+}
+
+    body.dept {
+        background: linear-gradient(rgb(19 67 102), rgb(231 245 255 / 23%)), url(assets/images/bidderbg.jpg) no-repeat;
+    }
+    
+
+    .login-container {
+        backdrop-filter: blur(4px);
+    }
+
+.login-container {
+    display: flex;
+    width: 900px;
+    max-width: 95%;
+    background: var(--bg-white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+.left-panel {
+    flex: 1;
+    padding: 0px 40px;
+    background: linear-gradient(135deg, #ffffff3b, #ffffff96), url(../../img/logobg.png) no-repeat;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #879eaf54;
+    background-position: center;
+    background-size: auto;
+}
+
+    .left-panel h1 {
+        margin: 0 0 10px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .left-panel p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #0d6efd;
+        background: #e9f2ff;
+        width: auto;
+        border-radius: 18px;
+        padding: 6px 17px;
+        margin: 9px 105px;
+        font-weight: 600;
+        border: 1px solid;
+    }
+
+
+.right-panel {
+    flex: 1;
+    padding: 20px 45px;
+    background: linear-gradient(45deg, #e4f3ff, #ffffff);
+    text-align: center;
+}
+
+    .right-panel h2 {
+        margin: 0;
+        font-size: 26px;
+        color: var(--text-dark);
+    }
+
+    .right-panel .subtitle {
+        margin-bottom: 30px;
+        color: var(--muted);
+        font-size: 14px;
+    }
+
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+    .form-group input {
+        width: 100%;
+        height: 42px;
+        padding: 10px 12px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        font-size: 16px;
+    }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+
+.captcha-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.captcha-box {
+    background: #134366;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: var(--radius);
+}
+
+.refresh-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: #e5e7eb;
+    font-size: 18px;
+}
+
+
+.login-btn {
+    width: 100%;
+    height: 44px;
+    border: none;
+    background: var(--primary);
+    color: #fff;
+    font-size: 15px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    .login-btn:hover {
+        opacity: 0.9;
+    }
+
+
+.text-center {
+    text-align: center;
+    display: block;
+}
+
+    .text-center a {
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+.divider {
+    text-align: center;
+    margin: 25px 0 15px;
+    color: var(--muted);
+    position: relative;
+}
+
+    .divider::before,
+    .divider::after {
+        content: "";
+        height: 1px;
+        background: #e5e7eb;
+        width: 40%;
+        position: absolute;
+        top: 50%;
+    }
+
+    .divider::before {
+        left: 0;
+    }
+
+    .divider::after {
+        right: 0;
+    }
+
+.left-panel h3 {
+    color: #134366 !important;
+}
+
+@@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        text-align: center;
+    }
+}
+
+
+
+.otp-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* OTP boxes */
+.otp-box {
+    display: flex;
+    gap: 10px;
+}
+
+    .otp-box input {
+        width: 42px;
+        height: 42px;
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        outline: none;
+    }
+
+        .otp-box input:focus {
+            border-color: var(--primary);
+        }
+
+
+.form-group {
+    position: relative;
+}
+
+    /* Add space for icon */
+    .form-group input {
+        padding-left: 32px;
+    }
+.otp-box input[type="text"] {
+    padding-left: 10px !important;
+}
+    /* Base icon style */
+    .form-group::before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        color: #6b7280;
+        pointer-events: none;
+    }
+
+    /* Email */
+    .form-group.email::before {
+        content: "\f0e0"; /* envelope */
+    }
+
+    /* Password */
+    .form-group.password::before {
+        content: "\f023"; /* lock */
+    }
+
+    /* Captcha */
+    .form-group.captcha::before {
+        content: "\f023"; /* shield */
+    }
+
+/* Show / Hide password text */
+.show-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: 600;
+    color: #0b5ed7;
+    cursor: pointer;
+    user-select: none;
+}
+
+.form-group.mobile::before {
+    content: "\f007"; /* mobile / phone */
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body class="dept">
+
+    <div class="login-container">
+
+        <!-- LEFT PANEL -->
+        <div class="left-panel text-center">
+            <img src="assets/images/map.jpg" style="width:100%;border-radius:10px;" />
+
+            <h3>Commercial Taxes Department<br/><span style="font-size: 17px;font-weight: 700;font-family: system-ui;">Government of Telangana</span></h3>
+           
+            <a href="https://tgct.gov.in/tgportal/"><p><i class="fi fi-sr-house-chimney"></i> Back to Home</p></a>
+            
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right-panel">
+            <img src="assets/images/tg-logo-min.png" alt="" style="width: 22%;"/>
+            <img src="assets/images/Tlogo.png" alt="" style="width: 25%;"/>
+            
+            <h2>Department Login</h2>
+            <div class="subtitle">Access to Dashboard</div>
+
+            <form>
+                <div class="form-group mobile">
+                    
+                    <input type="tel" placeholder="Username" inputmode="numeric" title="Enter Username"
+  pattern="[0-9]{10}"
+  maxlength="10" class="w-25">
+                </div>
+
+                <div class="form-group captcha-row captcha">
+                    <input type="text" placeholder="Password" title="Enter Password">
+                    
+                </div>
+<button class="login-btn"><a href="admin.html">Send OTP</a></button>
+<a href="https://vatis.tgct.gov.in/gst_eiu/Reset_Password.aspx"><label style="margin-top: 25px !important;float: right;position: absolute;z-index: 999999;color: #0d6efd;width: 18%;right: 33px;bottom: 54px;">Forgate Password ?</label></a>
+
+
+                <div class="form-group"><br/>
+                    <div class="otp-row hidden">
+  <label><strong>OTP</strong></label>
+  <div class="otp-box">
+   <input type="tel" placeholder="Enter OTP" inputmode="numeric" title="Enter OTP" pattern="[0-9]{10}" maxlength="10" class="w-25" style="
+    width: 100px !important;
+    padding-left: 0px !important;
+">
+    
+    <!-- <input type="text" maxlength="1">
+    <input type="text" maxlength="1"> -->
+  </div>
+</div>
+                </div>
+
+               
+
+                
+            </form>
+
+            
+        </div>
+
+    </div>
+
+    <script>
+const inputs = document.querySelectorAll(".otp-box input");
+
+inputs.forEach((input, index) => {
+  input.addEventListener("input", () => {
+    if (input.value && index < inputs.length - 1) {
+      inputs[index + 1].focus();
+    }
+  });
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Backspace" && !input.value && index > 0) {
+      inputs[index - 1].focus();
+    }
+  });
+});
+</script>
+</body>
+</html>
+

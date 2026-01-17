@@ -1,0 +1,1903 @@
+﻿<!doctype html>
+<html lang="en" data-layout="horizontal" data-layout-style="" data-layout-position="fixed" data-topbar="light">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>C. T. D. | Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Superadmin" name="description">
+    <meta content="Themesbrand" name="author">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-- plugin css -->
+    <link href="assets/libs/jsvectormap/jsvectormap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css">
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+
+     <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css">
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css">
+<style>
+    
+    .footer-2__bottom-wrapper {
+    background: #0D2140 !important;
+}
+.footer-2__bottom-wrapper .container {
+    width: 100%;
+    font-size: 14px;
+}
+.footer-2__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.footer-2__copyright p, .footer-2__copyright-menu p {
+    font-size: 16px;
+    font-family: system-ui !important;
+    font-weight: 600 !important;
+    color: #d2e3fb;
+    margin-bottom: 5px !important;
+    margin: 8px 0px;
+}
+    .modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #fff;
+}
+
+/* Gradient Header */
+.modern-table thead tr {
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+    color: white;
+    font-size: 16px;
+}
+
+.modern-table th, .modern-table td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+/* Hover & Zebra */
+.modern-table tbody tr:nth-child(even) {
+    background: #f5f8ff;
+}
+.modern-table tbody tr:hover {
+    background: #e8f0fe;
+    transition: 0.2s ease-in-out;
+}
+
+/* Sticky Header */
+.modern-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Table Border Bottom */
+.modern-table td {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.scroll-box {
+    width: 275px;
+    height: 375px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    padding: 10px;
+  }
+
+  .scroll-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    animation: scrollDown 12s linear infinite;
+  }
+
+  @keyframes scrollDown {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+  }
+
+  .scroll-item {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    background: #f8f8f8;
+    padding: 8px;
+    border-radius: 6px;
+  }
+</style>
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html.htm" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo1.jpg" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo1.jpg" alt="" height="17">
+                        </span>
+                    </a>
+
+                  
+                </div>
+
+                <!-- <div class="date-time" id="dateTime"></div> -->
+                <!-- App Search-->
+                <form class="app-search d-none d-md-block">
+                    
+                    <div class="dropdown-menu dropdown-menu-lg" id="search-dropdown">
+                        <div data-simplebar="" style="max-height: 320px;">
+                            <!-- item-->
+                            <div class="dropdown-header">
+                                <h6 class="text-overflow text-muted mb-0 text-uppercase">Recent Searches</h6>
+                            </div>
+
+                            <div class="dropdown-item bg-transparent text-wrap">
+                                <a href="index.html.htm" class="btn btn-soft-secondary btn-sm rounded-pill">how to setup <i class="mdi mdi-magnify ms-1"></i></a>
+                                <a href="index.html.htm" class="btn btn-soft-secondary btn-sm rounded-pill">buttons <i class="mdi mdi-magnify ms-1"></i></a>
+                            </div>
+                            <!-- item-->
+                            <div class="dropdown-header mt-2">
+                                <h6 class="text-overflow text-muted mb-1 text-uppercase">Pages</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="ri-bubble-chart-line align-middle fs-18 text-muted me-2"></i>
+                                <span>Analytics Dashboard</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"></i>
+                                <span>Help Center</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="ri-user-settings-line align-middle fs-18 text-muted me-2"></i>
+                                <span>My account settings</span>
+                            </a>
+
+                            <!-- item-->
+                            <div class="dropdown-header mt-2">
+                                <h6 class="text-overflow text-muted mb-2 text-uppercase">Members</h6>
+                            </div>
+
+                            <div class="notification-list">
+                                <!-- item -->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-2.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-0">Angela Bernier</h6>
+                                            <span class="fs-11 mb-0 text-muted">Manager</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- item -->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-0">David Grasso</h6>
+                                            <span class="fs-11 mb-0 text-muted">Web Designer</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- item -->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-5.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-0">Mike Bunch</h6>
+                                            <span class="fs-11 mb-0 text-muted">React Developer</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="text-center pt-3 pb-1">
+                            <a href="pages-search-results.html.htm" class="btn btn-primary btn-sm">View All Results <i class="ri-arrow-right-line ms-1"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="d-flex align-items-center">
+<div class="date-time" id="dateTime"></div>
+                <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                    <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bx bx-search fs-22"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                        <form class="p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                    <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                
+
+                <div class="dropdown topbar-head-dropdown ms-1 header-item">
+
+
+
+                    <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class='bx bx-category-alt fs-22'></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg p-0 dropdown-menu-end">
+                        <div class="p-3 border-top-0 border-start-0 border-end-0 border-dashed border">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h6 class="m-0 fw-semibold fs-15">Common use Applications </h6>
+                                </div>
+                                <!-- <div class="col-auto">
+                                    <a href="#!" class="btn btn-sm btn-soft-info"> View All Apps
+                                        <i class="ri-arrow-right-s-line align-middle"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="p-2">
+                            <div class="row g-0">
+                                <div class="col">
+                                    <a class="dropdown-icon-item" href="#!">
+                                        <img src="assets/images/brands/github.png" alt="Github">
+                                        <span>Returns</span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-icon-item" href="#!">
+                                        <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
+                                        <span>Registraions</span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-icon-item" href="#!">
+                                        <img src="assets/images/brands/dribbble.png" alt="dribbble">
+                                        <span>Revenue</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row g-0">
+                                <div class="col">
+                                    <a class="dropdown-icon-item" href="#!">
+                                        <img src="assets/images/brands/dropbox.png" alt="dropbox">
+                                        <span>Dropbox</span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-icon-item" href="#!">
+                                        <img src="assets/images/brands/mail_chimp.png" alt="mail_chimp">
+                                        <span>Mail Chimp</span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-icon-item" href="#!">
+                                        <img src="assets/images/brands/slack.png" alt="slack">
+                                        <span>Slack</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="ms-1 header-item d-none d-sm-flex">
+                    <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" data-toggle="fullscreen">
+                        <i class='bx bx-fullscreen fs-22'></i>
+                    </button>
+                </div>
+
+                <!-- <div class="ms-1 header-item d-none d-sm-flex">
+                    <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle light-dark-mode">
+                        <i class='bx bx-moon fs-22'></i>
+                    </button>
+                </div> -->
+
+                <div class="dropdown topbar-head-dropdown ms-1 header-item" id="notificationDropdown">
+                    <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
+                        <i class='bx bx-bell fs-22'></i>
+                        <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span class="visually-hidden">unread messages</span></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
+
+                        <div class="dropdown-head bg-primary bg-pattern rounded-top">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0 fs-16 fw-semibold text-white"> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto dropdown-tabs">
+                                        <span class="badge bg-light text-body fs-13"> 4 New</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-2 pt-2">
+                                <ul class="nav nav-tabs dropdown-tabs nav-tabs-custom" data-dropdown-tabs="true" id="notificationItemsTab" role="tablist">
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#all-noti-tab" role="tab" aria-selected="true">
+                                            All (4)
+                                        </a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#messages-tab" role="tab" aria-selected="false">
+                                            Messages
+                                        </a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#alerts-tab" role="tab" aria-selected="false">
+                                            Alerts
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-content position-relative" id="notificationItemsTabContent">
+                            <div class="tab-pane fade show active py-2 ps-2" id="all-noti-tab" role="tabpanel">
+                                <div data-simplebar="" style="max-height: 300px;" class="pe-2">
+                                    <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3 flex-shrink-0">
+                                                <span class="avatar-title bg-info-subtle text-info rounded-circle fs-16">
+                                                    <i class="bx bx-badge-check"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <a href="#!" class="stretched-link">
+                                                    <h6 class="mt-0 mb-2 lh-base">Your <b>Elite</b> author Graphic
+                                                        Optimization <span class="text-secondary">reward</span> is
+                                                        ready!
+                                                    </h6>
+                                                </a>
+                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                    <span><i class="mdi mdi-clock-outline"></i> Just 30 sec ago</span>
+                                                </p>
+                                            </div>
+                                            <div class="px-2 fs-15">
+                                                <div class="form-check notification-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="all-notification-check01">
+                                                    <label class="form-check-label" for="all-notification-check01"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-2.jpg" class="me-3 rounded-circle avatar-xs flex-shrink-0" alt="user-pic">
+                                            <div class="flex-grow-1">
+                                                <a href="#!" class="stretched-link">
+                                                    <h6 class="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6>
+                                                </a>
+                                                <div class="fs-13 text-muted">
+                                                    <p class="mb-1">Answered to your comment on the cash flow forecast's
+                                                        graph 🔔.</p>
+                                                </div>
+                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                    <span><i class="mdi mdi-clock-outline"></i> 48 min ago</span>
+                                                </p>
+                                            </div>
+                                            <div class="px-2 fs-15">
+                                                <div class="form-check notification-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="all-notification-check02">
+                                                    <label class="form-check-label" for="all-notification-check02"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3 flex-shrink-0">
+                                                <span class="avatar-title bg-danger-subtle text-danger rounded-circle fs-16">
+                                                    <i class='bx bx-message-square-dots'></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <a href="#!" class="stretched-link">
+                                                    <h6 class="mt-0 mb-2 fs-13 lh-base">You have received <b class="text-success">20</b> new messages in the conversation
+                                                    </h6>
+                                                </a>
+                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                    <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                </p>
+                                            </div>
+                                            <div class="px-2 fs-15">
+                                                <div class="form-check notification-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="all-notification-check03">
+                                                    <label class="form-check-label" for="all-notification-check03"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-8.jpg" class="me-3 rounded-circle avatar-xs flex-shrink-0" alt="user-pic">
+                                            <div class="flex-grow-1">
+                                                <a href="#!" class="stretched-link">
+                                                    <h6 class="mt-0 mb-1 fs-13 fw-semibold">Maureen Gibson</h6>
+                                                </a>
+                                                <div class="fs-13 text-muted">
+                                                    <p class="mb-1">We talked about a project on linkedin.</p>
+                                                </div>
+                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                    <span><i class="mdi mdi-clock-outline"></i> 4 hrs ago</span>
+                                                </p>
+                                            </div>
+                                            <div class="px-2 fs-15">
+                                                <div class="form-check notification-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="all-notification-check04">
+                                                    <label class="form-check-label" for="all-notification-check04"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="my-3 text-center view-all">
+                                        <button type="button" class="btn btn-soft-success waves-effect waves-light">View
+                                            All Notifications <i class="ri-arrow-right-line align-middle"></i></button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade py-2 ps-2" id="messages-tab" role="tabpanel" aria-labelledby="messages-tab">
+                                <div data-simplebar="" style="max-height: 300px;" class="pe-2">
+                                    <div class="text-reset notification-item d-block dropdown-item">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-grow-1">
+                                                <a href="#!" class="stretched-link">
+                                                    <h6 class="mt-0 mb-1 fs-13 fw-semibold">James Lemire</h6>
+                                                </a>
+                                                <div class="fs-13 text-muted">
+                                                    <p class="mb-1">We talked about a project on linkedin.</p>
+                                                </div>
+                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                    <span><i class="mdi mdi-clock-outline"></i> 30 min ago</span>
+                                                </p>
+                                            </div>
+                                            <div class="px-2 fs-15">
+                                                <div class="form-check notification-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="messages-notification-check01">
+                                                    <label class="form-check-label" for="messages-notification-check01"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-reset notification-item d-block dropdown-item">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-2.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-grow-1">
+                                                <a href="#!" class="stretched-link">
+                                                    <h6 class="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6>
+                                                </a>
+                                                <div class="fs-13 text-muted">
+                                                    <p class="mb-1">Answered to your comment on the cash flow forecast's
+                                                        graph 🔔.</p>
+                                                </div>
+                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                    <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                </p>
+                                            </div>
+                                            <div class="px-2 fs-15">
+                                                <div class="form-check notification-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="messages-notification-check02">
+                                                    <label class="form-check-label" for="messages-notification-check02"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-reset notification-item d-block dropdown-item">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-6.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-grow-1">
+                                                <a href="#!" class="stretched-link">
+                                                    <h6 class="mt-0 mb-1 fs-13 fw-semibold">Kenneth Brown</h6>
+                                                </a>
+                                                <div class="fs-13 text-muted">
+                                                    <p class="mb-1">Mentionned you in his comment on 📃 invoice #12501.
+                                                    </p>
+                                                </div>
+                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                    <span><i class="mdi mdi-clock-outline"></i> 10 hrs ago</span>
+                                                </p>
+                                            </div>
+                                            <div class="px-2 fs-15">
+                                                <div class="form-check notification-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="messages-notification-check03">
+                                                    <label class="form-check-label" for="messages-notification-check03"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-reset notification-item d-block dropdown-item">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-8.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-grow-1">
+                                                <a href="#!" class="stretched-link">
+                                                    <h6 class="mt-0 mb-1 fs-13 fw-semibold">Maureen Gibson</h6>
+                                                </a>
+                                                <div class="fs-13 text-muted">
+                                                    <p class="mb-1">We talked about a project on linkedin.</p>
+                                                </div>
+                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                    <span><i class="mdi mdi-clock-outline"></i> 3 days ago</span>
+                                                </p>
+                                            </div>
+                                            <div class="px-2 fs-15">
+                                                <div class="form-check notification-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="messages-notification-check04">
+                                                    <label class="form-check-label" for="messages-notification-check04"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="my-3 text-center view-all">
+                                        <button type="button" class="btn btn-soft-success waves-effect waves-light">View
+                                            All Messages <i class="ri-arrow-right-line align-middle"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade p-4" id="alerts-tab" role="tabpanel" aria-labelledby="alerts-tab"></div>
+
+                            <div class="notification-actions" id="notification-actions">
+                                <div class="d-flex text-muted justify-content-center">
+                                    Select <div id="select-content" class="text-body fw-semibold px-1">0</div> Result <button type="button" class="btn btn-link link-danger p-0 ms-3" data-bs-toggle="modal" data-bs-target="#removeNotificationModal">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown ms-sm-3 header-item topbar-user">
+                    <button type="button" class="btn material-shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center">
+                            <img class="rounded-circle header-profile-user" src="assets/images/R.png" alt="Header Avatar">
+                            <span class="text-start ms-xl-2">
+                                <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Kalyan Babu</span>
+                                <span class="d-none d-xl-block ms-1 fs-12 user-name-sub-text">Team Lead</span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <h6 class="dropdown-header">Welcome Kalyanbabu!</h6>
+                        <!-- <a class="dropdown-item" href="pages-profile.html.htm"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                        <a class="dropdown-item" href="apps-chat.html.htm"><i class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Messages</span></a>
+                        <a class="dropdown-item" href="apps-tasks-kanban.html.htm"><i class="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Taskboard</span></a>
+                        <a class="dropdown-item" href="pages-faqs.html.htm"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Help</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="pages-profile.html.htm"><i class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Balance : <b>₹5971.67</b></span></a>
+                        <a class="dropdown-item" href="pages-profile-settings.html.htm"><span class="badge bg-success-subtle text-success mt-1 float-end">New</span><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
+                        <a class="dropdown-item" href="auth-lockscreen-basic.html.htm"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Lock screen</span></a> -->
+                        <a class="dropdown-item" href="DeptLogin.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- removeNotificationModal -->
+<div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mt-2 text-center">
+                    <lord-icon src="../../../gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
+                    <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                        <h4>Are you sure ?</h4>
+                        <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+                    </div>
+                </div>
+                <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                    <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
+                </div>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html.htm" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-dark.png" alt="" height="17">
+                    </span>
+                </a>
+                <!-- Light Logo-->
+                <a href="index.html.htm" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-light.png" alt="" height="17">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+    
+            <div class="dropdown sidebar-user m-1 rounded">
+                <button type="button" class="btn material-shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="d-flex align-items-center gap-2">
+                        <img class="rounded header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                        <span class="text-start">
+                            <span class="d-block fw-medium sidebar-user-name-text">Anna Adame</span>
+                            <span class="d-block fs-14 sidebar-user-name-sub-text"><i class="ri ri-circle-fill fs-10 text-success align-baseline"></i> <span class="align-middle">Online</span></span>
+                        </span>
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <!-- item-->
+                    <h6 class="dropdown-header">Welcome Anna!</h6>
+                    <a class="dropdown-item" href="pages-profile.html.htm"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                    <a class="dropdown-item" href="apps-chat.html.htm"><i class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Messages</span></a>
+                    <a class="dropdown-item" href="apps-tasks-kanban.html.htm"><i class="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Taskboard</span></a>
+                    <a class="dropdown-item" href="pages-faqs.html.htm"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Help</span></a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pages-profile.html.htm"><i class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Balance : <b>₹5971.67</b></span></a>
+                    <a class="dropdown-item" href="pages-profile-settings.html.htm"><span class="badge bg-success-subtle text-success mt-1 float-end">New</span><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
+                    <a class="dropdown-item" href="auth-lockscreen-basic.html.htm"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
+                    <a class="dropdown-item" href="auth-logout-basic.html.htm"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                </div>
+            </div>
+            <div id="scrollbar">
+                <div class="container-fluid">
+
+
+                    <div id="two-column-menu">
+                    </div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="" role="button" aria-expanded="false" aria-controls="sidebarDashboards" style="
+    border: 1px solid #6d3f9a;
+    margin: 2px -8px 0px 11px;
+    background: #ffffff12;
+    border-radius: 18px;
+    padding: 12px 10px 12px 0px;text-align: end;
+">
+                                <i class="ri-home-2-line"></i> 
+                            </a>
+                           
+                        </li> <!-- end Dashboard Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
+                                <i class="ri-apps-2-line"></i> <span data-key="t-apps">Registraions</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarApps">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="apps-chat.html.htm" class="nav-link" data-key="t-chat"> GST </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="apps-chat.html.htm" class="nav-link" data-key="t-chat"> Deemed </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="apps-chat.html.htm" class="nav-link" data-key="t-chat"> Welcome Letters </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="apps-chat.html.htm" class="nav-link" data-key="t-chat"> New Registraions Tracking <br/>(From 1st Nov 2025) </a>
+                                    </li>
+
+
+                                    <!-- <li class="nav-item">
+                                        <a href="#sidebarCalendar" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCalendar" data-key="t-calender">
+                                            GST
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarCalendar">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-calendar.html.htm" class="nav-link" data-key="t-main-calender"> Main Calender </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-calendar-month-grid.html.htm" class="nav-link" data-key="t-month-grid"> Month Grid </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="apps-chat.html.htm" class="nav-link" data-key="t-chat"> Chat </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarEmail" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarEmail" data-key="t-email">
+                                            Email
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarEmail">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-mailbox.html.htm" class="nav-link" data-key="t-mailbox"> Mailbox </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#sidebaremailTemplates" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebaremailTemplates" data-key="t-email-templates">
+                                                        Email Templates
+                                                    </a>
+                                                    <div class="collapse menu-dropdown" id="sidebaremailTemplates">
+                                                        <ul class="nav nav-sm flex-column">
+                                                            <li class="nav-item">
+                                                                <a href="apps-email-basic.html.htm" class="nav-link" data-key="t-basic-action"> Basic Action </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="apps-email-ecommerce.html.htm" class="nav-link" data-key="t-ecommerce-action"> Ecommerce Action </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarEcommerce" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarEcommerce" data-key="t-ecommerce">
+                                            Ecommerce
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarEcommerce">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-ecommerce-products.html.htm" class="nav-link" data-key="t-products"> Products </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-ecommerce-product-details.html.htm" class="nav-link" data-key="t-product-Details"> Product Details </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-ecommerce-add-product.html.htm" class="nav-link" data-key="t-create-product"> Create Product </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-ecommerce-orders.html.htm" class="nav-link" data-key="t-orders">
+                                                        Orders </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-ecommerce-order-details.html.htm" class="nav-link" data-key="t-order-details"> Order Details </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-ecommerce-customers.html.htm" class="nav-link" data-key="t-customers"> Customers </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-ecommerce-cart.html.htm" class="nav-link" data-key="t-shopping-cart"> Shopping Cart </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-ecommerce-checkout.html.htm" class="nav-link" data-key="t-checkout"> Checkout </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-ecommerce-sellers.html.htm" class="nav-link" data-key="t-sellers">
+                                                        Sellers </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-ecommerce-seller-details.html.htm" class="nav-link" data-key="t-sellers-details"> Seller Details </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarProjects" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProjects" data-key="t-projects">
+                                            Projects
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarProjects">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-projects-list.html.htm" class="nav-link" data-key="t-list"> List
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-projects-overview.html.htm" class="nav-link" data-key="t-overview"> Overview </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-projects-create.html.htm" class="nav-link" data-key="t-create-project"> Create Project </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarTasks" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTasks" data-key="t-tasks"> Tasks
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarTasks">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-tasks-kanban.html.htm" class="nav-link" data-key="t-kanbanboard">
+                                                        Kanban Board </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-tasks-list-view.html.htm" class="nav-link" data-key="t-list-view">
+                                                        List View </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-tasks-details.html.htm" class="nav-link" data-key="t-task-details"> Task Details </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarCRM" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCRM" data-key="t-crm"> CRM
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarCRM">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-crm-contacts.html.htm" class="nav-link" data-key="t-contacts">
+                                                        Contacts </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-crm-companies.html.htm" class="nav-link" data-key="t-companies">
+                                                        Companies </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-crm-deals.html.htm" class="nav-link" data-key="t-deals"> Deals
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-crm-leads.html.htm" class="nav-link" data-key="t-leads"> Leads
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarCrypto" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCrypto" data-key="t-crypto"> Crypto
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarCrypto">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-crypto-transactions.html.htm" class="nav-link" data-key="t-transactions"> Transactions </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-crypto-buy-sell.html.htm" class="nav-link" data-key="t-buy-sell">
+                                                        Buy & Sell </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-crypto-orders.html.htm" class="nav-link" data-key="t-orders">
+                                                        Orders </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-crypto-wallet.html.htm" class="nav-link" data-key="t-my-wallet">
+                                                        My Wallet </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-crypto-ico.html.htm" class="nav-link" data-key="t-ico-list"> ICO
+                                                        List </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-crypto-kyc.html.htm" class="nav-link" data-key="t-kyc-application"> KYC Application </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarInvoices" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarInvoices" data-key="t-invoices">
+                                            Invoices
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarInvoices">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-invoices-list.html.htm" class="nav-link" data-key="t-list-view">
+                                                        List View </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-invoices-details.html.htm" class="nav-link" data-key="t-details">
+                                                        Details </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-invoices-create.html.htm" class="nav-link" data-key="t-create-invoice"> Create Invoice </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarTickets" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTickets" data-key="t-supprt-tickets">
+                                            Support Tickets
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarTickets">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-tickets-list.html.htm" class="nav-link" data-key="t-list-view">
+                                                        List View </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-tickets-details.html.htm" class="nav-link" data-key="t-ticket-details"> Ticket Details </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarnft" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarnft" data-key="t-nft-marketplace">
+                                            NFT Marketplace
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarnft">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-nft-marketplace.html.htm" class="nav-link" data-key="t-marketplace"> Marketplace </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-nft-explore.html.htm" class="nav-link" data-key="t-explore-now"> Explore Now </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-nft-auction.html.htm" class="nav-link" data-key="t-live-auction"> Live Auction </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-nft-item-details.html.htm" class="nav-link" data-key="t-item-details"> Item Details </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-nft-collections.html.htm" class="nav-link" data-key="t-collections"> Collections </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-nft-creators.html.htm" class="nav-link" data-key="t-creators"> Creators </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-nft-ranking.html.htm" class="nav-link" data-key="t-ranking"> Ranking </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-nft-wallet.html.htm" class="nav-link" data-key="t-wallet-connect"> Wallet Connect </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-nft-create.html.htm" class="nav-link" data-key="t-create-nft"> Create NFT </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="apps-file-manager.html.htm" class="nav-link"> <span data-key="t-file-manager">File Manager</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="apps-todo.html.htm" class="nav-link"> <span data-key="t-to-do">To Do</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarjobs" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarjobs" data-key="t-jobs"> Jobs</a>
+                                        <div class="collapse menu-dropdown" id="sidebarjobs">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="apps-job-statistics.html.htm" class="nav-link" data-key="t-statistics"> Statistics </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#sidebarJoblists" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarJoblists" data-key="t-job-lists">
+                                                        Job Lists
+                                                    </a>
+                                                    <div class="collapse menu-dropdown" id="sidebarJoblists">
+                                                        <ul class="nav nav-sm flex-column">
+                                                            <li class="nav-item">
+                                                                <a href="apps-job-lists.html.htm" class="nav-link" data-key="t-list"> List
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="apps-job-grid-lists.html.htm" class="nav-link" data-key="t-grid"> Grid </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="apps-job-details.html.htm" class="nav-link" data-key="t-overview"> Overview</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#sidebarCandidatelists" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCandidatelists" data-key="t-candidate-lists">
+                                                        Candidate Lists
+                                                    </a>
+                                                    <div class="collapse menu-dropdown" id="sidebarCandidatelists">
+                                                        <ul class="nav nav-sm flex-column">
+                                                            <li class="nav-item">
+                                                                <a href="apps-job-candidate-lists.html.htm" class="nav-link" data-key="t-list-view"> List View
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="apps-job-candidate-grid.html.htm" class="nav-link" data-key="t-grid-view"> Grid View</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-job-application.html.htm" class="nav-link" data-key="t-application"> Application </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-job-new.html.htm" class="nav-link" data-key="t-new-job"> New Job </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-job-companies-lists.html.htm" class="nav-link" data-key="t-companies-list"> Companies List </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="apps-job-categories.html.htm" class="nav-link" data-key="t-job-categories"> Job Categories</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="apps-api-key.html.htm" class="nav-link" data-key="t-api-key">API Key</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                                <i class="ri-layout-3-line"></i> <span data-key="t-layouts">Returns</span> <span class="badge badge-pill bg-danger" data-key="t-hot">Hot</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarLayouts">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="layouts-horizontal.html.htm" target="_blank" class="nav-link" data-key="t-horizontal">GST-R3B Returns Filing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Single Return Defaulters</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">GST-R07 Defaulters (TDS Deductors)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="layouts-two-column.html.htm" target="_blank" class="nav-link" data-key="t-two-column">GST-R3B QRMP Returns Filing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="layouts-vertical-hovered.html.htm" target="_blank" class="nav-link" data-key="t-hovered">Composition Return Filing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">GST-R09 Defaulters (TDS Deductors)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">ASMT 13</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li> <!-- end Dashboard Menu -->
+
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
+                                <i class="ri-line-chart-fill"></i> <span data-key="t-authentication">Revenue</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarAuth">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">GST S-Revenue Reports</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">GST S-Revenue Target to Perforamnce</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">GST Cash Payments</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Legancy Revenue</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Prof. Tax Revenue</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
+                                <i class=" ri-bar-chart-2-line"></i> <span data-key="t-authentication">Return Verification Tasks</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarAuth">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">R1 vs 3B</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">TDS vs 3B</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">TCS vs 3B</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Interest</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
+                                <i class=" ri-chat-poll-line"></i> <span data-key="t-authentication">IGST</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarAuth">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">IGST 2A vs 3B</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Wrong Reporting of IGST HC</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">TCS vs 3B</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Interest</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                         <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
+                                <i class="ri-file-text-fill"></i> <span data-key="t-authentication">Arreas Collections</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarAuth">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">DXC 07</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Leagcy Arreas</a>
+                                    </li>
+                                     
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
+                                <i class="ri-bubble-chart-line"></i> <span data-key="t-authentication">External Source</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarAuth">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Lease & Rentals</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Mins & Minrales</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">O.C.</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">R.C.M.</a>
+                                    </li>
+                                     
+                                </ul>
+                            </div>
+                        </li>
+
+                       
+
+
+                         <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
+                                <i class="ri-pencil-fill"></i> <span data-key="t-authentication">Legal</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarAuth">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Lease & Rentals</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">D.C AJC (VAT/GST)</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">D.C. Tribunal (VAT)</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">D.C. High Court (VAT/GST)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="layouts-detached.html.htm" target="_blank" class="nav-link" data-key="t-detached">Remanded Cases</a>
+                                    </li>
+                                     
+                                </ul>
+                            </div>
+                        </li>
+
+                      
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+
+            <div class="sidebar-background"></div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+<nav aria-label="breadcrumb" class="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Dashboard / Revenue</li>
+  </ol>
+</nav>
+          <div class="page-content">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="h-100">
+                               
+                                <!--end row-->
+
+
+<div class="row d-none">
+    
+
+    <div class="report-wrapper">
+
+  <!-- Header -->
+  <div class="report-header">
+    <h2 class="report-title">Report Title</h2>
+    <p>Date of Inception : 04-Oct-2024.</p>
+  </div>
+
+  <!-- Filters -->
+  <div class="report-filters">
+    <div style="display: flex;gap: 15px;">
+    <div class="filter-group">
+      <label>Filter</label>
+      <select class="filter-select">
+        <option>Select</option>
+        <option>Daily</option>
+        <option>Weekly</option>
+        <option>Monthly</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label>From</label>
+      <input type="date" class="filter-input">
+    </div>
+
+    <div class="filter-group">
+      <label>To</label>
+      <input type="date" class="filter-input">
+    </div>
+    <div class="filter-group">
+      <label>&nbsp;</label>
+      <label><div class="btn btn-success add-btn"><i class="mdi mdi-file-download"></i></div></label>
+    </div>
+    </div>
+    <div class="reportupdated">
+        <p>Report Updated as on : 13-Jan-2026.</p>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="gov-table-shell">
+  <div class="gov-table-scroll">
+    <table class="gov-data-table">
+      <thead>
+        <tr>
+          <th rowspan="3">Sl. No.</th>
+          <th rowspan="3">Division</th>
+          <th rowspan="3">No of TPs</th>
+
+          <th colspan="4">Tax as Per GSTR-1</th>
+          <th colspan="4">Tax as Per GSTR-3B</th>
+          <th colspan="4">Difference</th>
+
+          <th colspan="2">Verification Status</th>
+          <th colspan="2">Demand Determined Upon Verification</th>
+          <th colspan="2">Collections In The Month</th>
+          <th colspan="2">Collections Upto The Month</th>
+          <th colspan="2">Balance</th>
+        </tr>
+
+        <tr>
+          <th>SGST</th><th>CGST</th><th>IGST</th><th>Total</th>
+          <th>SGST</th><th>CGST</th><th>IGST</th><th>Total</th>
+          <th>SGST</th><th>CGST</th><th>IGST</th><th>Total</th>
+
+          <th>No of TPs Verified</th>
+          <th>Balance No of TPs</th>
+
+          <th>SGST</th><th>Total</th>
+          <th>SGST</th><th>Total</th>
+          <th>SGST</th><th>Total</th>
+          <th>SGST</th><th>Total</th>
+        </tr>
+
+        <tr class="gov-subhead">
+          <th>4(a)</th><th>4(b)</th><th>5(a)</th><th>5(b)</th>
+          <th>5(c)</th><th>5(d)</th><th>6(a)</th><th>6(b)</th>
+          <th>6(c)</th><th>6(d)</th><th>7(a)</th><th>7(b)</th>
+          <th>7(c)</th><th>7(d)</th>
+          <th>8(a)</th><th>8(b)</th>
+          <th>9(a)</th><th>9(b)</th>
+          <th>10(a)</th><th>10(b)</th>
+          <th>11(a)</th><th>11(b)</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Abids</td>
+          <td>2</td>
+
+          <td>0.52</td><td>0.76</td><td>0.27</td><td>1.56</td>
+          <td>0.25</td><td>0.25</td><td>0.04</td><td>0.53</td>
+          <td>0.28</td><td>0.51</td><td>0.23</td><td>1.02</td>
+
+          <td>0</td><td>2</td>
+          <td>0.28</td><td>1.02</td>
+          <td>0</td><td>0</td>
+          <td>0.14</td><td>0.20</td>
+          <td>0.28</td><td>1.02</td>
+        </tr>
+
+        <!-- Total Row -->
+        <tr class="gov-total-row">
+          <td colspan="2">Total</td>
+          <td>56</td>
+
+          <td>71.19</td><td>73.82</td><td>21.57</td><td>166.57</td>
+          <td>67.19</td><td>67.19</td><td>19.71</td><td>154.08</td>
+          <td>4.00</td><td>6.63</td><td>1.86</td><td>12.49</td>
+
+          <td>0</td><td>56</td>
+          <td>4.00</td><td>12.49</td>
+          <td>0</td><td>0</td>
+          <td>5.15</td><td>9.68</td>
+          <td>4.00</td><td>12.49</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+
+<div class="row mt-4 table1">
+    
+
+    <div class="report-wrapper">
+
+  <!-- Header -->
+  <div class="report-header">
+    <h2 class="report-title" title="Date of Module Inception : 01-Jan-2024">Revenue Verification Task 1 : R1 Filed and 3B Filed (live) Amended - Division Abstract</h2>
+    <!-- <p>Date of Inception : 04-Oct-2024.</p> -->
+  </div>
+
+  <!-- Filters -->
+  <div class="report-filters">
+    <div style="display: flex;gap: 15px;">
+    <div class="filter-group">
+      <label>Filter</label>
+      <select class="filter-select">
+        <option>Select</option>
+        <option>Daily</option>
+        <option>Weekly</option>
+        <option>Monthly</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label>From</label>
+      <input type="date" class="filter-input">
+    </div>
+
+    <div class="filter-group">
+      <label>To</label>
+      <input type="date" class="filter-input">
+    </div>
+    <div class="filter-group" style="
+    margin-top: 7px;
+    color: blue !important;
+">
+      <label>&nbsp;</label>
+      <label >( Amount Rs. in Crores )</label>
+    </div>
+    <div class="filter-group">
+      <label>&nbsp;</label>
+      <label><div class="btn btn-success add-btn"><i class="mdi mdi-file-download"></i></div></label>
+    </div>
+     
+    </div>
+    <!-- <div class="reportupdated">
+        <p>Report Updated as on : 13-Jan-2026.</p>
+    </div> -->
+    <div class="reportupdated">
+        <p>Tax Period : April 23 - Dec 25.</p>
+        <p>Report Updated as on : 13-Jan-2026.</p>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="gov-table-shell">
+  <div class="gov-table-scroll">
+    <table class="gov-data-table">
+      <thead>
+        <tr>
+          <th rowspan="3">Sl. No.</th>
+          <th rowspan="3">Division</th>
+          <th rowspan="3">No of TPs</th>
+
+          <th colspan="4">Tax as Per GSTR-1</th>
+          <th colspan="4">Tax as Per GSTR-3B</th>
+          <th colspan="4">Difference</th>
+
+          <th colspan="2">Verification Status</th>
+          <th colspan="2">Demand Determined Upon Verification</th>
+          <th colspan="2">Collections In The Month</th>
+          <th colspan="2">Collections Upto The Month</th>
+          <th colspan="2">Balance</th>
+        </tr>
+
+        <tr>
+          <th>SGST</th><th>CGST</th><th>IGST</th><th>Total</th>
+          <th>SGST</th><th>CGST</th><th>IGST</th><th>Total</th>
+          <th>SGST</th><th>CGST</th><th>IGST</th><th>Total</th>
+
+          <th>No of TPs Verified</th>
+          <th>Balance No of TPs</th>
+
+          <th>SGST</th><th>Total</th>
+          <th>SGST</th><th>Total</th>
+          <th>SGST</th><th>Total</th>
+          <th>SGST</th><th>Total</th>
+        </tr>
+
+        <tr class="gov-subhead">
+          <th>4(a)</th><th>4(b)</th><th>5(a)</th><th>5(b)</th>
+          <th>5(c)</th><th>5(d)</th><th>6(a)</th><th>6(b)</th>
+          <th>6(c)</th><th>6(d)</th><th>7(a)</th><th>7(b)</th>
+          <th>7(c)</th><th>7(d)</th>
+          <th>8(a)</th><th>8(b)</th>
+          <th>9(a)</th><th>9(b)</th>
+          <th>10(a)</th><th>10(b)</th>
+          <th>11(a)</th><th>11(b)</th>
+        </tr>
+      </thead>
+
+      <tbody><tr><td style="text-align:center;">1</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Abids">Abids</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Abids">32</a></td><td style="text-align:center;">47.88</td><td style="text-align:center;">53.66</td><td style="text-align:center;">12.34</td><td style="text-align:center;">113.88</td><td style="text-align:center;">46.87</td><td style="text-align:center;">46.87</td><td style="text-align:center;">11.65</td><td style="text-align:center;">105.39</td><td style="text-align:center;">1.01</td><td style="text-align:center;">6.79</td><td style="text-align:center;">0.69</td><td style="text-align:center;">8.49</td><td style="text-align:center;">5</td><td style="text-align:center;">27</td><td style="text-align:center;">0.01</td><td style="text-align:center;">0.02</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.14</td><td style="text-align:center;">0.2</td><td style="text-align:center;">0.96</td><td style="text-align:center;">6.93</td></tr><tr><td style="text-align:center;">2</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Adilabad">Adilabad</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Adilabad">11</a></td><td style="text-align:center;">8.09</td><td style="text-align:center;">8.14</td><td style="text-align:center;">0.14</td><td style="text-align:center;">16.36</td><td style="text-align:center;">7.42</td><td style="text-align:center;">7.42</td><td style="text-align:center;">0.13</td><td style="text-align:center;">14.97</td><td style="text-align:center;">0.67</td><td style="text-align:center;">0.72</td><td style="text-align:center;">0.01</td><td style="text-align:center;">1.4</td><td style="text-align:center;">9</td><td style="text-align:center;">2</td><td style="text-align:center;">0.06</td><td style="text-align:center;">0.12</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.98</td><td style="text-align:center;">1.47</td><td style="text-align:center;">0.5</td><td style="text-align:center;">1.03</td></tr><tr><td style="text-align:center;">3</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Begumpet">Begumpet</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Begumpet">20</a></td><td style="text-align:center;">30.05</td><td style="text-align:center;">31.34</td><td style="text-align:center;">11.37</td><td style="text-align:center;">72.76</td><td style="text-align:center;">28.83</td><td style="text-align:center;">28.83</td><td style="text-align:center;">10.99</td><td style="text-align:center;">68.64</td><td style="text-align:center;">1.22</td><td style="text-align:center;">2.51</td><td style="text-align:center;">0.39</td><td style="text-align:center;">4.12</td><td style="text-align:center;">7</td><td style="text-align:center;">13</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.1</td><td style="text-align:center;">0.25</td><td style="text-align:center;">0.84</td><td style="text-align:center;">3.26</td></tr><tr><td style="text-align:center;">4</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Charminar">Charminar</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Charminar">29</a></td><td style="text-align:center;">28.57</td><td style="text-align:center;">29.79</td><td style="text-align:center;">4.58</td><td style="text-align:center;">62.94</td><td style="text-align:center;">26.14</td><td style="text-align:center;">26.14</td><td style="text-align:center;">4.68</td><td style="text-align:center;">56.97</td><td style="text-align:center;">2.43</td><td style="text-align:center;">3.65</td><td style="text-align:center;">-0.11</td><td style="text-align:center;">5.98</td><td style="text-align:center;">0</td><td style="text-align:center;">29</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.05</td><td style="text-align:center;">0.18</td><td style="text-align:center;">2.43</td><td style="text-align:center;">5.98</td></tr><tr><td style="text-align:center;">5</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Hyderabad Rural">Hyderabad Rural</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Hyderabad Rural">71</a></td><td style="text-align:center;">56.1</td><td style="text-align:center;">56.47</td><td style="text-align:center;">9.54</td><td style="text-align:center;">122.1</td><td style="text-align:center;">51.41</td><td style="text-align:center;">51.41</td><td style="text-align:center;">8.5</td><td style="text-align:center;">111.31</td><td style="text-align:center;">4.69</td><td style="text-align:center;">5.06</td><td style="text-align:center;">1.04</td><td style="text-align:center;">10.79</td><td style="text-align:center;">0</td><td style="text-align:center;">71</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.44</td><td style="text-align:center;">0.79</td><td style="text-align:center;">4.69</td><td style="text-align:center;">10.79</td></tr><tr><td style="text-align:center;">6</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Karimnagar">Karimnagar</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Karimnagar">24</a></td><td style="text-align:center;">10.24</td><td style="text-align:center;">11.73</td><td style="text-align:center;">0.16</td><td style="text-align:center;">22.13</td><td style="text-align:center;">8.54</td><td style="text-align:center;">8.54</td><td style="text-align:center;">0.14</td><td style="text-align:center;">17.22</td><td style="text-align:center;">1.7</td><td style="text-align:center;">3.19</td><td style="text-align:center;">0.02</td><td style="text-align:center;">4.91</td><td style="text-align:center;">1</td><td style="text-align:center;">23</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.25</td><td style="text-align:center;">0.55</td><td style="text-align:center;">1.68</td><td style="text-align:center;">4.86</td></tr><tr><td style="text-align:center;">7</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Madhapur">Madhapur</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Madhapur">59</a></td><td style="text-align:center;">93.88</td><td style="text-align:center;">94.5</td><td style="text-align:center;">23.33</td><td style="text-align:center;">211.72</td><td style="text-align:center;">82.74</td><td style="text-align:center;">82.74</td><td style="text-align:center;">20.16</td><td style="text-align:center;">185.64</td><td style="text-align:center;">11.14</td><td style="text-align:center;">11.76</td><td style="text-align:center;">3.17</td><td style="text-align:center;">26.08</td><td style="text-align:center;">24</td><td style="text-align:center;">35</td><td style="text-align:center;">0.16</td><td style="text-align:center;">0.32</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.67</td><td style="text-align:center;">1.34</td><td style="text-align:center;">9.82</td><td style="text-align:center;">23.2</td></tr><tr><td style="text-align:center;">8</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Malkajgiri">Malkajgiri</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Malkajgiri">48</a></td><td style="text-align:center;">43.46</td><td style="text-align:center;">44.17</td><td style="text-align:center;">9.15</td><td style="text-align:center;">96.78</td><td style="text-align:center;">39.83</td><td style="text-align:center;">39.83</td><td style="text-align:center;">8.59</td><td style="text-align:center;">88.26</td><td style="text-align:center;">3.63</td><td style="text-align:center;">4.34</td><td style="text-align:center;">0.55</td><td style="text-align:center;">8.52</td><td style="text-align:center;">6</td><td style="text-align:center;">42</td><td style="text-align:center;">0.28</td><td style="text-align:center;">0.56</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.06</td><td style="text-align:center;">0.12</td><td style="text-align:center;">3.65</td><td style="text-align:center;">8.53</td></tr><tr><td style="text-align:center;">9</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Nalgonda">Nalgonda</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Nalgonda">30</a></td><td style="text-align:center;">26.64</td><td style="text-align:center;">26.81</td><td style="text-align:center;">4.53</td><td style="text-align:center;">57.98</td><td style="text-align:center;">23.93</td><td style="text-align:center;">23.93</td><td style="text-align:center;">4.53</td><td style="text-align:center;">52.39</td><td style="text-align:center;">2.71</td><td style="text-align:center;">2.88</td><td style="text-align:center;">0</td><td style="text-align:center;">5.59</td><td style="text-align:center;">0</td><td style="text-align:center;">30</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.19</td><td style="text-align:center;">0.34</td><td style="text-align:center;">2.71</td><td style="text-align:center;">5.59</td></tr><tr><td style="text-align:center;">10</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Nizamabad">Nizamabad</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Nizamabad">28</a></td><td style="text-align:center;">23.76</td><td style="text-align:center;">24.08</td><td style="text-align:center;">8.49</td><td style="text-align:center;">56.34</td><td style="text-align:center;">18.46</td><td style="text-align:center;">18.46</td><td style="text-align:center;">8.43</td><td style="text-align:center;">45.34</td><td style="text-align:center;">5.31</td><td style="text-align:center;">5.63</td><td style="text-align:center;">0.06</td><td style="text-align:center;">11</td><td style="text-align:center;">3</td><td style="text-align:center;">25</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.86</td><td style="text-align:center;">1.72</td><td style="text-align:center;">5.21</td><td style="text-align:center;">10.81</td></tr><tr><td style="text-align:center;">11</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Punjagutta">Punjagutta</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Punjagutta">56</a></td><td style="text-align:center;">787.03</td><td style="text-align:center;">791.46</td><td style="text-align:center;">308.86</td><td style="text-align:center;">1887.35</td><td style="text-align:center;">769.87</td><td style="text-align:center;">769.87</td><td style="text-align:center;">299.87</td><td style="text-align:center;">1839.6</td><td style="text-align:center;">17.16</td><td style="text-align:center;">21.59</td><td style="text-align:center;">9</td><td style="text-align:center;">47.75</td><td style="text-align:center;">0</td><td style="text-align:center;">56</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.13</td><td style="text-align:center;">0.27</td><td style="text-align:center;">17.16</td><td style="text-align:center;">47.75</td></tr><tr><td style="text-align:center;">12</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Saroor Nagar">Saroor Nagar</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Saroor Nagar">56</a></td><td style="text-align:center;">51.46</td><td style="text-align:center;">56.19</td><td style="text-align:center;">18.17</td><td style="text-align:center;">125.82</td><td style="text-align:center;">49.42</td><td style="text-align:center;">49.42</td><td style="text-align:center;">17.78</td><td style="text-align:center;">116.63</td><td style="text-align:center;">2.03</td><td style="text-align:center;">6.77</td><td style="text-align:center;">0.38</td><td style="text-align:center;">9.19</td><td style="text-align:center;">0</td><td style="text-align:center;">56</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.39</td><td style="text-align:center;">0.79</td><td style="text-align:center;">2.03</td><td style="text-align:center;">9.19</td></tr><tr><td style="text-align:center;">13</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Secunderabad">Secunderabad</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Secunderabad">35</a></td><td style="text-align:center;">193.25</td><td style="text-align:center;">199.99</td><td style="text-align:center;">89.44</td><td style="text-align:center;">482.69</td><td style="text-align:center;">188.75</td><td style="text-align:center;">188.75</td><td style="text-align:center;">89.02</td><td style="text-align:center;">466.51</td><td style="text-align:center;">4.51</td><td style="text-align:center;">11.24</td><td style="text-align:center;">0.42</td><td style="text-align:center;">16.17</td><td style="text-align:center;">3</td><td style="text-align:center;">32</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.23</td><td style="text-align:center;">0.42</td><td style="text-align:center;">4.42</td><td style="text-align:center;">15.95</td></tr><tr><td style="text-align:center;">14</td><td style="text-align:center;"><a href="#" class="btn Division_style" id="link1" data-division-name="Warangal">Warangal</a></td><td style="text-align:center;"><a href="#" class="btn link_style no-of-tps-view" data-division="Warangal">44</a></td><td style="text-align:center;">34.38</td><td style="text-align:center;">34.73</td><td style="text-align:center;">2.04</td><td style="text-align:center;">71.15</td><td style="text-align:center;">32.36</td><td style="text-align:center;">32.36</td><td style="text-align:center;">2.03</td><td style="text-align:center;">66.74</td><td style="text-align:center;">2.02</td><td style="text-align:center;">2.38</td><td style="text-align:center;">0.01</td><td style="text-align:center;">4.41</td><td style="text-align:center;">16</td><td style="text-align:center;">28</td><td style="text-align:center;">0.35</td><td style="text-align:center;">0.7</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">0.95</td><td style="text-align:center;">1.82</td><td style="text-align:center;">1.69</td><td style="text-align:center;">3.72</td></tr><tr style="font-weight:bold"><td> </td><td style="text-align:center;"> TOTAL </td><td style="text-align:center;"><span style="font-weight: bold;">543</span></td><td style="text-align:center;">1434.79</td><td style="text-align:center;">1463.07</td><td style="text-align:center;">502.14</td><td style="text-align:center;">3400</td><td style="text-align:center;">1374.55</td><td style="text-align:center;">1374.55</td><td style="text-align:center;">486.51</td><td style="text-align:center;">3235.62</td><td style="text-align:center;">60.24</td><td style="text-align:center;">88.51</td><td style="text-align:center;">15.63</td><td style="text-align:center;">164.38</td><td style="text-align:center;">74</td><td style="text-align:center;">469</td><td style="text-align:center;">0.86</td><td style="text-align:center;">1.72</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">5.45</td><td style="text-align:center;">10.25</td><td style="text-align:center;">57.8</td><td style="text-align:center;">157.59</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+                                
+                      
+                            </div> <!-- end .h-100-->
+
+                        </div> <!-- end col -->
+
+                        
+                    </div>
+
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <div class="footer-2__bottom-wrapper">
+                    <div class="container">
+                        <div class="footer-2__bottom">
+                            <div class="footer-2__copyright">
+                                <p>Copyright © 2026 Government of Telangana. All rights reserved.</p>
+                            </div>
+                            <div class="footer-2__copyright-menu" style="text-align: right;">
+                                <p>Design and Developed by : <img src="assets/images/fotterlogo1.png" alt="Fotter CMS logo" style="width: 16%;margin-top: -5px;"> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!--preloader-->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- JAVASCRIPT -->
+    <!-- Core JS -->
+<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/simplebar/simplebar.min.js"></script>
+<script src="assets/libs/node-waves/waves.min.js"></script>
+<script src="assets/libs/feather-icons/feather.min.js"></script>
+<script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+<script src="assets/js/plugins.js"></script>
+
+<!-- ApexCharts -->
+<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+<!-- Vector Maps -->
+<script src="assets/libs/jsvectormap/jsvectormap.min.js"></script>
+<script src="assets/libs/jsvectormap/maps/world-merc.js"></script>
+<script src="assets/js/maps/us-merc-en.js"></script>
+<script src="assets/js/maps/canada.js"></script>
+<script src="assets/js/maps/russia.js"></script>
+<script src="assets/js/maps/spain.js"></script>
+
+<!-- Vector Maps Init -->
+<script src="assets/js/pages/vector-maps.init.js"></script>
+
+<!-- PrismJS -->
+<script src="assets/libs/prismjs/prism.js"></script>
+
+<!-- Dashboard Init -->
+<script src="assets/js/pages/dashboard-analytics.init.js"></script>
+
+<!-- App JS -->
+<script src="assets/js/app.js"></script>
+<script>
+    const searchInput = document.getElementById("searchInput");
+const industryFilter = document.getElementById("industryFilter");
+const investmentFilter = document.getElementById("investmentFilter");
+const table = document.getElementById("dataTable");
+const rows = table.getElementsByTagName("tr");
+
+function filterTable() {
+    const searchValue = searchInput.value.toLowerCase();
+    const industryVal = industryFilter.value;
+    const investVal = investmentFilter.value;
+
+    for (let i = 1; i < rows.length; i++) {
+        let cols = rows[i].getElementsByTagName("td");
+        let sector = cols[1].innerText.toLowerCase();
+        let industries = parseInt(cols[2].innerText);
+        let investment = parseFloat(cols[3].innerText);
+
+        let visible = true;
+
+        // Search filter
+        if (!sector.includes(searchValue)) visible = false;
+
+        // Industry range filter
+        if (industryVal === "0-100" && !(industries <= 100)) visible = false;
+        if (industryVal === "100-1000" && !(industries >= 100 && industries <= 1000)) visible = false;
+        if (industryVal === "1000+" && !(industries > 1000)) visible = false;
+
+        // Investment filter
+        if (investVal === "0-3000" && !(investment <= 3000)) visible = false;
+        if (investVal === "3000-5000" && !(investment >= 3000 && investment <= 5000)) visible = false;
+        if (investVal === "5000+" && !(investment > 5000)) visible = false;
+
+        rows[i].style.display = visible ? "" : "none";
+    }
+}
+
+searchInput.addEventListener("keyup", filterTable);
+industryFilter.addEventListener("change", filterTable);
+investmentFilter.addEventListener("change", filterTable);
+
+</script>
+<script src="assets/libs/echarts/echarts.min.js"></script>
+
+<script src="assets/js/pages/echarts.init.js"></script>
+<script>
+function updateDateTime() {
+    const now = new Date();
+
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const year = now.getFullYear();
+
+    let hours = now.getHours();
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12 || 12;
+
+    document.getElementById("dateTime").innerHTML =
+        `${day}/${month}/${year} | ${hours}:${minutes}:${seconds} ${ampm}`;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+</script>
+
+</body>
+
+</html>
