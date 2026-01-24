@@ -5,12 +5,16 @@
     <title>Department Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="~/css/newlogin.css" rel="stylesheet" />
+
+    
      <link rel="shortcut icon" href="assets/images/Tlogo.png">
     <style>
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
     
+
+
     :root { 
     --primary: #0d6efd;
     --left-bg-start: #1f5f8b;
@@ -313,6 +317,18 @@ body {
 a {
     color: #fff;
     text-decoration: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+   body.dept {
+    min-height: 70vh;
+}
+ .left-panel {
+    display: none;
+}
+.right-panel label {
+    display: contents;
+}
 }
 </style>
 </head>

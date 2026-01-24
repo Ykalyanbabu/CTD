@@ -1,0 +1,9 @@
+@media screen and (min-width: 480px) {
+  body.dept {
+    min-height: 70vh;
+}
+    .left-panel.text-center {
+    display: none;
+}
+
+}
